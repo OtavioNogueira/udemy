@@ -1,0 +1,113 @@
+body {
+  background-color: #C4BD9D;
+  color:#786A31;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size:1.8cm;
+}
+
+.um {
+  background-image: url(desk.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  text-shadow: 2px 2px 3px rgb(102, 102, 102);
+  border-top: 1px solid rgb(47, 47, 47);
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  width: 1000px;
+
+}
+
+.content, .content2 {
+  padding: 15px;  
+  background-color: #dfdbca;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+img{
+  max-width: 140px;
+}
+
+.header2{
+  border-bottom: solid 2px #ccc;
+	padding: 5px;
+	text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+	background: #eee;
+}
+
+.lorem {
+  text-align: justify;
+}
+
+.um nav li {
+  display: inline-block;
+  list-style: none;
+  border: 2px solid aliceblue;
+  margin-left: 6px;
+}
+
+.um nav ul{
+  text-align: right;
+  margin: 20px 40px 0px 0px;
+}
+
+.um nav a {
+  padding: 10px;
+  display: block;
+  color:aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  background: rgba(0,0,0, 0.5);
+  text-decoration: none;
+}
+
+.um nav a:hover {
+  background: rgba(0,0,0, 0.1);
+}
+
+.card{
+  width: 32%;
+  float: left;
+  border: 2px solid #786A31;
+  box-sizing: border-box;
+  margin-left: 1%;
+  
+}
+
+.content{
+  overflow: auto;
+  padding: 5px;
+}
+
+.card p {
+  background-color: #786A31;
+  color:#dfdbca;
+  margin: -3px;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+}

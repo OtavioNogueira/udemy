@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Test</title>
+  <style>
+    .form{
+      width: 250px;
+      margin: 50px auto ;
+    }
+
+    #user, #pw, #pw2, .btn{
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .btn{
+      margin-top: 10px;
+    }
+
+    #pw{
+      margin-bottom: 10px;
+    }
+    #user{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1> Exemplo de formulários </h1>
+
+  <form action="#" method="GET" class="form">
+
+    <fieldset>
+
+      <legend>LOGIN</legend>
+
+      <label for="user">Usuário</label>
+      <input type="text" id="user" name="user" autofocus>
+
+      <label for="pw">Senha</label>
+      <input type="password" id="pw" name="pw">
+
+      <label for="pw2">Confirmar Senha</label>
+      <input type="password" id="pw2" name="pw2">
+
+      <input class="btn" type="submit" value="Login">
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+
+  <form action="#" method="POST" class="Form">
+    <fieldset>
+
+      <legend>Dados Pessoais</legend>
+
+      <label>Email</label>
+      <input type="email" required maxlength="50" placeholder="Endereço válido">
+
+      <hr>
+
+      <label>Número de filhos </label>
+      <input type="number" min="0" max="1000" placeholder="n°">
+
+      <hr>
+
+      <label>Nascimento</label>
+      <input type="date" >
+
+      <hr>
+
+      <p>Sexo:</p>
+      <input type="radio" name="sexo">
+      <label>Masculino</label>
+      <input type="radio"  name="sexo">
+      <label>Feminino</label>
+
+      <hr>
+
+      <label>Estado</label>
+
+      <select>
+        <option valeu="0">Selecione</option>
+        <option valeu="SP">São Paulo</option>
+        <option valeu="RJ">Rio de Janeiro</option>
+        <option valeu="MG">Minas Gerais</option>
+      </select>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Interesse</legend>
+
+      <label><input type="checkbox" name="html" value="html">HTML</label>
+      <label><input type="checkbox" name="css" value="css">CSS</label>
+      <label><input type="checkbox" name="js" value="js">JavaScript</label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Mensagem</legend>
+      <textarea cols="50" rows="10" placeholder="Digite aqui"></textarea>
+      <hr>
+      <input type="range" min="0" max="10">
+      <hr>
+      <input type="time">
+      <hr>
+      <input type="color">
+    </fieldset>
+
+     <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

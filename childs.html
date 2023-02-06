@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de teste CHILDS</title>
+
+  <style>
+    div p:nth-of-type(2){ /* of type considera apenas a tag p na contagem entre ()*/
+      color: red;
+    }
+    .aux{
+      background: #dddd;
+    }
+    .aux:nth-of-type(1){ /* vai selecionar o valor (1) da div, não da classe */
+      color: green;
+    }
+    p:last-child{
+      color: rgb(160, 160, 0);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="aux">Meu parágrafo</p>
+    <p>Meu parágrafo</p>
+    <hr>
+    <p class="aux">Meu parágrafo</p>
+    <p>Meu parágrafo</p>
+    <hr>
+    <p>Meu parágrafo</p>
+    <p class="aux">Meu parágrafo</p>
+    <hr>
+    <p>Meu parágrafo</p>
+    <p>Meu parágrafo</p>
+  </div>
+</body>
+</html>

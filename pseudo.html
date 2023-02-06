@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes e Elementos</title>
+  <style>
+    input[type="checkbox"]{
+      height: 50px;
+      width: 50px;
+    }
+    input[type="checkbox"]:checked{
+      height: 25px;
+      width: 25px;
+    }
+    button:disabled{
+      background: yellow;
+    }
+    p{
+      color: red;
+    }
+    p:empty:before{
+      content: "Parágrafo vazio!";
+    }
+    input[type="text"]:focus{
+      background: rgb(238, 238, 238);
+    }
+    input[type="text"]:read-only{
+      background: rgb(247, 216, 12);
+    }
+    a:focus, a:hover{
+      background: rgb(246, 205, 205);
+    }
+    input::placeholder{
+      color: rgb(232, 131, 131);
+    }
+  </style>
+</head>
+<body>
+  <label><input type="checkbox" values="sim">Li e aceito os termos</label>
+  <hr>
+
+  <button>Avançar</button>
+  <button disabled>Voltar</button>
+  <hr>
+
+  <p>Paragrafo 1</p>
+  <p> </p>
+  <p></p>
+  <hr>
+
+  <input type="text">
+  <input type="text" value="valor inicial">
+  <input type="text" value="valor inicial" read-only>
+  <input type="text" value="valor inicial" disabled>
+  <input type="text" placeholder="valor do placeholder">
+  <hr>
+
+  <ul>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+    <li><a href="#">Link falso</a></li>
+  </ul>
+
+  <div tabindex="1">Div 1</div>
+  <div tabindex="2">Div 2</div>
+  <div tabindex="3">Div 3</div>
+</body>
+</html>

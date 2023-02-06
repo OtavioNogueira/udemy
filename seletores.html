@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores Compostos</title> 
+  
+  <style>
+    article:nth-child(1) a{ /* toda tag a que seja decendente desse article */
+      color: red;
+    }
+    article:nth-child(3) > p{ /* seleciona todos os parágrafos que são filhos direto de article */
+      color: green;
+    } 
+    article:nth-child(5) h3 + p{ /* parágrafo imediatamente após o h3 */
+      color: brown;
+      margin-top: 50px;
+    }
+    article:nth-child(7) h3 ~ p{ /* próximos irmãos que vierem após o h3 */
+      color: cyan;
+    }
+    article:not(.destaque){ /* Deixa o texto de todos os articles em laranja, menos o que tiver a classe .destaque */
+      color: orange;
+    }
+    .destaque{
+      background-color: yellow;
+    }
+
+    a[href="#"]{ /* Todas as tags a como essa entre [] devem ter essa opacidade */
+      opacity: .2;
+    }
+
+    a[href^="http"]{ /* Todas as tags a que começarem com http devem ter essa cor */
+      color:chartreuse; 
+    }
+    a[title]{ /* Todas as tags a que tiverem title devem ter essa cor  */
+      color:crimson;
+    }
+    a[href$="abc"]{ /* Todas as tags que terminarem com abc seguiram esse comando*/
+      text-decoration: none;
+      color: darkgoldenrod;
+    }
+    div {
+      border: 3px solid red;
+      padding: 25px;
+      position: relative;
+    }
+    div:before{
+      content: "Before ";
+    }
+    div:after{
+      content: "";
+      background: red;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div>Texto principal da div</div>
+
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr> 
+
+  <article>
+    <h3>
+      Titulo
+    </h3> 
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article class="destaque">
+    <h3>
+      Titulo
+    </h3>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+    <p>Paragrafo <a href="#">Apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <ul>
+    <li><a href="#">Link Falso</a></li>
+    <li><a href="#">Link Falso</a></li>
+    <li><a href="https://www.google.com">Link Externo</a></li>
+    <li><a href="https://www.google.abc">Link Externo</a></li>
+    <li><a href="table-list-overflow.html" title="Exercicio anterior">Link Interno</a></li> 
+  </ul>
+</body>
+</html>

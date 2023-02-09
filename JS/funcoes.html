@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    var output = document.querySelector('#output');
+    var text = prompt("Insira um texto: ");
+
+    for(var i = 0; i < 1001; i++){
+      text += 'i:' + i + '<br>';
+    }
+
+    output.innerHTML = text + '<br>';
+
+  </script>
+</body>
+</html>

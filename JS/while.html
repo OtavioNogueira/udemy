@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>While</title>
+</head>
+<body>
+  <h1>Teste de while</h1>
+
+  <script>
+  var i = 1 
+  var aux = 1004
+  var aux2 = 1004
+  var num = parseInt(prompt("Insira um numero: "));
+
+  while(i <= 1000){
+    document.write(num + "x" + i + "=" + (num*i) + '<br>');
+    if(i % 10 == 0) {
+          document.write('<hr>');
+        }
+    i++
+  }
+
+  do{
+    document.write(aux + '<br>');
+    aux += 4
+  } while (aux < 2018);
+
+  document.write('<hr>');
+
+  </script>
+</body>
+</html>

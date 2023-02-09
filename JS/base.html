@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & JS</title>
+</head>
+<body>
+  <h1> 
+    Aula 1
+  </h1>
+
+  <script>
+    var nome = prompt("Qual seu nome?");
+    alert("Bem-vindo, " + nome);
+
+    var num = parseInt(prompt("Insira um valor"));
+    var num2 = parseInt(prompt("Insira mais um valor"));
+
+    var soma = num + num2;
+    var sub = num - num2;
+    var mult = num * num2;
+    var div = num / num2;
+    var media = (num + num2)/2  
+    var res = num % num2
+    var ex = num ** num2
+
+    alert("Essa é a soma desses dois valores: " + soma);
+    alert("Essa é a subtração desses dois valores: " + sub);
+    alert("Essa é a multiplicação desses dois valores: " + mult);
+    alert("Essa é a divisão desses dois valores: " + div);
+    alert("Essa é a média desses dois valores: " + media);
+    alert("O resto da divisão dos dois valores é: " + res);
+    alert("O primeiro valor elevado ao segundo resulta em: " + ex);
+    alert("A média é maior do que 5: " + (media > 5));
+    if(media > 5){
+      alert("Parabéns "+ nome +"! Você foi aprovado!");
+    } else {
+      alert("Sinto muito "+ nome +". Você foi reprovado");
+    }
+
+  </script>
+</body>
+</html>

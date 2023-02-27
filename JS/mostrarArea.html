@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do retângulo</title>
+</head>
+<body>
+  <button onclick="mostrarArea(largura, altura)">Mostrar área</button>
+
+  <div class="output"></div>
+
+  <script>
+    let x = 1;
+    var largura = parseFloat(prompt('digite a largura'));
+    var altura = parseFloat(prompt('digite a altura'));
+
+    function mostrarArea(l, a) {
+      alert("Essa será a área total: " + (largura * altura) + "m²");
+    }
+    function mostrarArea(l, a) {
+      var output = document.querySelector(".output");
+      var area = largura * altura;
+      output.innerHTML = area;
+
+    }
+
+    console.log(x)
+  </script>
+</body>
+</html>

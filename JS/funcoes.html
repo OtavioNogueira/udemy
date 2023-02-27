@@ -7,18 +7,33 @@
   <title>Funções</title>
 </head>
 <body>
+  <h1>Lógica de programação com JavaScript</h1>
+
+  <button onclick="mostrarTabuada()">Criar tabuada</button>
+  <button onclick="limparTabuada()">Limpar tabuada</button>
+
   <div id="output"></div>
 
   <script>
-    var output = document.querySelector('#output');
-    var text = prompt("Insira um texto: ");
 
-    for(var i = 0; i < 1001; i++){
-      text += 'i:' + i + '<br>';
+    function mostrarTabuada(){
+      var num = parseFloat(prompt("Insira um valor"));
+      limparTabuada();   
+      var i = 0
+      for(i = 0; i < 1001; i ++){
+        mensagem += num + ' x ' + i + ' = ' + (num*i) + '<br>'
+      }
+      output.innerHTML = mensagem;
+    }
+    function limparTabuada(){
+      mensagem = '';
+      output.innerHTML = mensagem;
     }
 
-    output.innerHTML = text + '<br>';
+    var output = document.querySelector('#output');
 
+    var mensagem = ''; 
+    
   </script>
 </body>
 </html>

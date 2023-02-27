@@ -12,6 +12,7 @@
   <button onclick="sub()">-</button>
   <button onclick="multi()">x</button>
   <button onclick="div()">/</button>
+  <button onclick="zerar()">0</button>
 
   <div id="output"></div>
 
@@ -25,9 +26,29 @@
       output.innerHTML = n1;
     }
 
+    function sub(){
+      var n = parseFloat(prompt("Digite mais um valor: "));
+      n1 -= n;
+      escreve();
+    }
+    function multi(){
+      var n = parseFloat(prompt("Digite mais um valor: "));
+      n1 *= n;
+      escreve();
+    }
+    function div(){
+      var n = parseFloat(prompt("Digite mais um valor: "));
+      n1 /= n;
+      escreve();
+    }
     function soma(){
       var n = parseFloat(prompt("Digite mais um valor: "));
-
+      n1 += n;
+      escreve();
+    }
+    function zerar(){
+      n1 = 0;
+      escreve();
     }
   </script>
 </body>
